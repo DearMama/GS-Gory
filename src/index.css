@@ -1,16 +1,16 @@
 :root {
-  --ink: #142624;
-  --ink-soft: #2a3f3c;
-  --paper: #f3f7f6;
-  --paper-deep: #e5eeec;
+  --ink: #ffffff;
+  --ink-soft: rgba(255, 255, 255, 0.82);
+  --paper: #000000;
+  --paper-deep: #000000;
   --teal: #0f4c4a;
-  --teal-mid: #1a6e6a;
+  --teal-mid: #9ad9d2;
   --teal-light: #7ec8c0;
-  --stream: #2f8f88;
+  --stream: #7ec8c0;
   --sand: #d8c9a8;
   --gold: #c9a24a;
   --white: #ffffff;
-  --line: rgba(20, 38, 36, 0.12);
+  --line: rgba(255, 255, 255, 0.16);
 
   --font-display: "Fraunces", "Georgia", serif;
   --font-body: "Figtree", "Helvetica Neue", sans-serif;
@@ -42,10 +42,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--ink);
-  background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(126, 200, 192, 0.18), transparent 55%),
-    radial-gradient(900px 500px at 100% 20%, rgba(201, 162, 74, 0.1), transparent 50%),
-    linear-gradient(180deg, var(--paper) 0%, #eef4f3 48%, var(--paper-deep) 100%);
+  background: #000000;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -278,7 +275,7 @@ p {
 
 .btn-primary {
   background: var(--gold);
-  color: var(--ink);
+  color: #141414;
 }
 
 .btn-primary:hover {
@@ -390,7 +387,7 @@ p {
 .vision-mission h3 {
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
-  color: var(--teal);
+  color: var(--teal-light);
 }
 
 .vision-mission p {
@@ -421,7 +418,7 @@ p {
 .values-list strong {
   font-family: var(--font-display);
   font-weight: 500;
-  color: var(--teal);
+  color: var(--teal-light);
 }
 
 .values-list span {
@@ -454,9 +451,7 @@ p {
 
 /* Services */
 .services {
-  background:
-    linear-gradient(180deg, rgba(15, 76, 74, 0.04), transparent 30%),
-    var(--paper);
+  background: #000000;
 }
 
 .service-list {
@@ -540,7 +535,7 @@ p {
 .sectors h3 {
   font-size: 1.1rem;
   margin-bottom: 0.85rem;
-  color: var(--teal);
+  color: var(--teal-light);
 }
 
 .sector-list {
@@ -593,7 +588,7 @@ p {
 
 /* Work */
 .work {
-  background: linear-gradient(180deg, var(--paper-deep), var(--paper));
+  background: #000000;
 }
 
 .work-list {
@@ -636,9 +631,7 @@ p {
 
 /* Contact */
 .contact {
-  background:
-    linear-gradient(160deg, rgba(15, 76, 74, 0.92), rgba(20, 38, 36, 0.96)),
-    url("/images/water.jpg") center/cover;
+  background: #000000;
   color: var(--white);
 }
 
@@ -734,8 +727,9 @@ p {
 /* Footer */
 .site-footer {
   padding: 2rem clamp(1.25rem, 4vw, 3rem) 2.5rem;
-  background: var(--ink);
+  background: #000000;
   color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid var(--line);
   font-size: 0.9rem;
 }
 
