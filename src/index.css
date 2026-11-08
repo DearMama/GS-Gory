@@ -13,7 +13,7 @@
   --line: rgba(255, 255, 255, 0.16);
 
   --font-display: "Fraunces", "Georgia", serif;
-  --font-body: "Figtree", "Helvetica Neue", sans-serif;
+  --font-body: Candara, "Segoe UI", "Helvetica Neue", sans-serif;
 
   --space-xs: 0.5rem;
   --space-sm: 0.875rem;
