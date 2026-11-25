@@ -6,30 +6,37 @@ const services = [
   {
     title: "Project management and coordination",
     body: "Planning, scheduling, budgets, stakeholder engagement, field coordination and client reporting.",
+    icon: "/images/services/project-management.png",
   },
   {
     title: "Assessments, studies and research",
     body: "Baselines, feasibility and value-chain studies, household and institutional surveys, focus group discussions and key informant interviews, risk and SWOT analysis.",
+    icon: "/images/services/assessments.png",
   },
   {
     title: "Water and wastewater engineering",
     body: "Feasibility studies, rainwater harvesting and drainage design.",
+    icon: "/images/services/water.png",
   },
   {
     title: "Environmental and climate services",
     body: "Environmental and social impact assessments, flood risk assessment, catchment and flood-zone mapping, climate resilience planning.",
+    icon: "/images/services/environment.png",
   },
   {
     title: "Waste management and circular economy",
     body: "Faecal sludge management, composting, recycling and materials recovery, life cycle assessment.",
+    icon: "/images/services/waste.png",
   },
   {
     title: "Monitoring, GIS and data",
     body: "Monitoring and evaluation frameworks, performance dashboards, GIS mapping and data files clients can reuse.",
+    icon: "/images/services/gis.png",
   },
   {
     title: "Training and capacity building",
     body: "Training manuals, SOPs, training of trainers, and business skills for artisans and service providers.",
+    icon: "/images/services/training.png",
   },
 ];
 
@@ -132,6 +139,7 @@ export default function App() {
       <header className="hero" id="top">
         <nav className="site-nav" aria-label="Primary">
           <a className="nav-brand" href="#top">
+            <img src="/images/logo.png" alt="" width="32" height="32" />
             GS Goryu Projects
           </a>
           <button
@@ -176,13 +184,13 @@ export default function App() {
         </nav>
 
         <div className="hero-media" aria-hidden="true">
-          <motion.img
-            src="/images/hero.jpg"
+          <img className="hero-hex" src="/images/hexagon.jpg" alt="" />
+          <img
+            className="hero-flow"
+            src={reduce ? "/images/divider.png" : "/images/confluence.gif"}
             alt=""
-            initial={reduce ? false : { scale: 1.08 }}
-            animate={reduce ? undefined : { scale: 1 }}
-            transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
           />
+          <img className="hero-logo" src="/images/logo.png" alt="" width="168" height="168" />
           <div className="hero-shade" />
         </div>
 
@@ -281,8 +289,8 @@ export default function App() {
               }}
             >
               <img
-                src="/images/about.jpg"
-                alt="Savanna landscape at sunset — place and environment that ground our work in Ghana"
+                src="/images/link-preview.png"
+                alt="GS Goryu Projects Ltd mark: a gold hexagon with the letters GS, and the line Where ideas come together."
               />
             </motion.div>
           </div>
@@ -333,9 +341,12 @@ export default function App() {
                     ease: [0.22, 1, 0.36, 1],
                   }}
                 >
-                  <span className="service-num" aria-hidden="true">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
+                  <img
+                    className="service-icon"
+                    src={s.icon}
+                    alt=""
+                    aria-hidden="true"
+                  />
                   <div>
                     <h3>{s.title}</h3>
                     <p>{s.body}</p>
@@ -395,9 +406,11 @@ export default function App() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
+              <img className="approach-hex" src="/images/hexagon.jpg" alt="" />
               <img
-                src="/images/water.jpg"
-                alt="Water cascading into a clear forest pool — the natural systems our projects protect and improve"
+                className="approach-flow"
+                src={reduce ? "/images/hero-background.png" : "/images/confluence.gif"}
+                alt="Two gold streams meeting and continuing as one, the confluence in the Goryu name."
               />
             </motion.div>
           </div>
