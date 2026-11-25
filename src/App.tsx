@@ -185,14 +185,9 @@ export default function App() {
 
         <div className="hero-media" aria-hidden="true">
           <img className="hero-hex" src="/images/hexagon.jpg" alt="" />
-          <img
-            className="hero-flow"
-            src={reduce ? "/images/divider.png" : "/images/confluence.gif"}
-            alt=""
-          />
-          <img className="hero-logo" src="/images/logo.png" alt="" width="168" height="168" />
           <div className="hero-shade" />
         </div>
+        <img className="hero-logo" src="/images/logo.png" alt="" width="168" height="168" />
 
         <div className="hero-content">
           <motion.h1
@@ -406,11 +401,10 @@ export default function App() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <img className="approach-hex" src="/images/hexagon.jpg" alt="" />
               <img
-                className="approach-flow"
-                src={reduce ? "/images/hero-background.png" : "/images/confluence.gif"}
-                alt="Two gold streams meeting and continuing as one, the confluence in the Goryu name."
+                className="approach-hex"
+                src="/images/hexagon.jpg"
+                alt=""
               />
             </motion.div>
           </div>
